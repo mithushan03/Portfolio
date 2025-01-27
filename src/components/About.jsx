@@ -84,8 +84,10 @@ const About = () => {
               <span className="font-bold">JavaScript</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <FaGitAlt size={40} className="text-[#f05032]" />
-              <span className="font-bold">Git</span>
+              <img src="/c++.png"
+                   alt="C++"
+                   className="w-10 h-10" />
+              <span className="font-bold">C++</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <FaGithub size={40} className="text-black" />
