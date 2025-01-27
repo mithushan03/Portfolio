@@ -52,8 +52,10 @@ const About = () => {
               <span className="font-bold">Matlab</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <SiTailwindcss size={40} className="text-[#38bdf8]" />
-              <span className="font-bold">Tailwind CSS</span>
+              <img src="/ltspice.png"
+                   alt="LT Spice"
+                   className="w-10 h-10" />
+              <span className="font-bold">LT Spice</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <img src="/arduino.png"
