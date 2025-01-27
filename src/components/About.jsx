@@ -47,7 +47,9 @@ const About = () => {
               <span className="font-bold">Python</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <FaCode size={40} className="text-[#0076A8]" />
+              <img src="/matlab.png"
+                   alt="MATLAB"
+                   className="w-10 h-10" />
               <span className="font-bold">MATLAB</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
