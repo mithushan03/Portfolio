@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaGitAlt,
   FaPython,
-  FaCode,
   FaMicrochip,
   FaNetworkWired,
   FaCog,
@@ -13,9 +12,7 @@ import {
   SiTailwindcss,
   SiNetlify,
 } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
 import { DiVisualstudio } from "react-icons/di";
-import { IoLogoNpm, IoLogoVercel } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -43,30 +40,38 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {/* Skill Icons */}
             <div className="flex flex-col items-center space-y-2">
-              <FaPython size={40} className="text-[#3776AB]" />
+              <img src="/python.png"
+                   alt="Python"
+                   className="w-10 h-10" />
               <span className="font-bold">Python</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <img src="/matlab.png"
-                   alt="MATLAB"
+                   alt="Matlab"
                    className="w-10 h-10" />
-              <span className="font-bold">MATLAB</span>
+              <span className="font-bold">Matlab</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <SiTailwindcss size={40} className="text-[#38bdf8]" />
               <span className="font-bold">Tailwind CSS</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <FaMicrochip size={40} className="text-[#00979D]" />
-                <span className="font-bold">Arduino</span>
+              <img src="/arduino.png"
+                   alt="arduino"
+                   className="w-10 h-10" />
+              <span className="font-bold">Arduino IDE</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <FaNetworkWired size={40} className="text-[#1BA0D7]" />
-                <span className="font-bold">Cisco Packet Tracer</span>
+              <img src="/cisco.png"
+                   alt="Cisco"
+                   className="w-10 h-10" />
+              <span className="font-bold">Cisco Packet Tracer</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
-              <FaCog size={40} className="text-[#FF3A3A]" />
-                <span className="font-bold">SolidWorks</span>
+              <img src="/solidworks.png"
+                   alt="Solidworks"
+                   className="w-10 h-10" />
+              <span className="font-bold">Solidworks</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <FaHtml5 size={40} className="text-[#e34c26]" />
