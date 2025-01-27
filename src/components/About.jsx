@@ -2,14 +2,8 @@ import {
   FaHtml5,
   FaJsSquare,
   FaGithub,
-  FaGitAlt,
-  FaPython,
-  FaMicrochip,
-  FaNetworkWired,
-  FaCog,
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
   SiNetlify,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
