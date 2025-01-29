@@ -16,7 +16,7 @@ const Home = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Electrical Engineer.",
+                  "Electrical Engineering Undergraudate.",
                   ,
                 ],
                 autoStart: true,
