@@ -17,12 +17,6 @@ const Project = () => {
             <p className="text-lg text-gray-700 mb-4">
             SmartTemp Control is an innovative IoT-based solution designed for efficient room temperature monitoring and control. Built using NodeMCU, it integrates sensors and mobile connectivity to provide real-time temperature data and remote control. This system demonstrates the application of electrical and electronics engineering principles, such as sensor interfacing, circuit design, and wireless communication, offering a practical example of how technology can enhance comfort and energy efficiency in modern environments.
             </p>
-            <a
-              href="https://petpalsss.netlify.app/login"
-              className="text-[#fe5617] font-bold text-lg hover:underline"
-            >
-              Live Demo
-            </a>
           </div>
 
           {/* Biosta AI Project */}
@@ -34,12 +28,6 @@ const Project = () => {
             RFID AttendEase is an innovative attendance management system that uses RFID technology to automate and streamline the process of recording attendance. By simply scanning an RFID tag, the system captures attendance data and automatically logs it in a Google Sheet. This eliminates manual entry, reduces errors, and provides real-time updates, making attendance tracking more efficient and convenient for both students and administrators.
 
             </p>
-            <a
-              href="https://biosta.netlify.app/"
-              className="text-[#fe5617] text-center font-bold text-lg hover:underline"
-            >
-              Live Demo
-            </a>
           </div>
         </div>
       </div>
