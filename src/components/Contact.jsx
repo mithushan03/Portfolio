@@ -69,7 +69,7 @@ const Contact = () => {
               <h2 className="text-xl font-bold">Follow on</h2>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/mithu31"
+                  href="https://github.com/mithushan03"
                   className="hover:text-[#fe5617]"
                 >
                   <FaGithub size={29} />

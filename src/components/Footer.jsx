@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
         <div className="flex justify-center gap-4 mt-2">
         <a
-            href="https://github.com/mithu31"
+            href="https://github.com/mithushan03"
             className="hover:text-[#fe5617]"
           >
             <FaGithub size={29} />

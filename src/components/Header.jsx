@@ -60,7 +60,7 @@ const Header = () => {
             } lg:hidden mt-3 flex justify-center gap-5`}
           >
             <a
-              href="https://github.com/mithu31"
+              href="https://github.com/mithushan03"
               className="  hover:text-[#fe5617] "
             >
               <FaGithub size={29} />
@@ -83,7 +83,7 @@ const Header = () => {
         {/* Social Media Links */}
         <div className="hidden lg:flex w-[100px] items-center justify-between">
           <a
-            href="https://github.com/mithu31"
+            href="https://github.com/mithushan03"
             className="hover:text-[#fe5617]"
           >
             <FaGithub size={29} />
