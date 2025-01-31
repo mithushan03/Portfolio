@@ -17,9 +17,8 @@ const App = () => {
       <Project />
       <Contact />
       <Footer />
-      <div className="h-[100vh] w-[100vw] bg-[#000]">
-        <SplashCursor />
-      </div>
+      <SplashCursor />
+      
     </div>
   );
 };
