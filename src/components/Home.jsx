@@ -17,7 +17,7 @@ const Home = () => {
               options={{
                 strings: [
                   "Electrical Engineering Undergraudate.",
-                  ,
+                  "Electronics Engineering Undergraudate."
                 ],
                 autoStart: true,
                 loop: true,
@@ -28,7 +28,7 @@ const Home = () => {
           </h2>
           {/* About Me */}
           <p className="text-lg md:text-xl text-gray-700 font-medium">
-          A passionate 3rd-year Electrical Engineering undergraduate, eager to learn and innovate in areas like circuit design and control systems. I enjoy applying theory to practical solutions and thrive on tackling challenges. As a tutor and content creator, I simplify complex concepts for learners. Committed to growth and meaningful contributions to the engineering field.
+          A passionate 3rd-year Electrical and Electronics Engineering undergraduate, eager to learn and innovate in areas like circuit design and control systems. I enjoy applying theory to practical solutions and thrive on tackling challenges. As a tutor and content creator, I simplify complex concepts for learners. Committed to growth and meaningful contributions to the engineering field.
           </p>
 
           {/* Contact Information */}
@@ -47,8 +47,12 @@ const Home = () => {
             </div>
           </div>
           {/* Button */}
-          <div className="bg-[#fe5617] px-5 py-2 rounded-2xl font-bold ">
-            <a href="https://drive.google.com/file/d/1g_PTpDIBh_sylxAGG-ZBpwb9aJxbPbnZ/view?usp=drive_link">Download CV</a>
+          <div className="flex items-center">
+            <div className="bg-[#fe5617] px-5 py-2 rounded-2xl font-bold ">
+              <a href="https://drive.google.com/file/d/1SYCztJy3UILrmqaxTQnfYxiaEd6BAHSu/view?usp=drive_link">
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
 
