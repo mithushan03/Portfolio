@@ -1,13 +1,68 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [homeLock, setHomeLock] = useState(true); // keep header always on while in home viewport
+  const hideTimer = useRef(null);
+
+  useEffect(() => {
+    const enabled = () => window.innerWidth >= 768;
+
+    const updateHomeLock = () => {
+      const inHome = window.scrollY < window.innerHeight * 0.6;
+      setHomeLock(inHome);
+      if (inHome) {
+        setVisible(true);
+        if (hideTimer.current) {
+          clearTimeout(hideTimer.current);
+          hideTimer.current = null;
+        }
+      }
+    };
+
+    function onMouseMove(e) {
+      if (!enabled() || homeLock) {
+        setVisible(true);
+        return;
+      }
+      if (e.clientY <= 80) {
+        setVisible(true);
+        if (hideTimer.current) {
+          clearTimeout(hideTimer.current);
+          hideTimer.current = null;
+        }
+        return;
+      }
+      if (hideTimer.current) clearTimeout(hideTimer.current);
+      hideTimer.current = setTimeout(() => setVisible(false), 800);
+    }
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("scroll", updateHomeLock, { passive: true });
+    window.addEventListener("resize", updateHomeLock);
+    updateHomeLock();
+
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("scroll", updateHomeLock);
+      window.removeEventListener("resize", updateHomeLock);
+      if (hideTimer.current) clearTimeout(hideTimer.current);
+    };
+  }, [homeLock]);
 
   return (
-    <div className="bg-[#FFFFFF] fixed top-0 left-0 w-full z-50 shadow">
+    <div
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => {
+        if (homeLock) return;
+        if (window.innerWidth >= 768) hideTimer.current = setTimeout(() => setVisible(false), 600);
+      }}
+      className={`bg-[#FFFFFF] fixed top-0 left-0 w-full z-50 shadow transition-transform duration-300 ${visible ? "translate-y-0" : "-translate-y-full"}`}
+    >
       <div className="max-w-[90%] mx-auto py-3 flex items-center justify-between font-inter">
         {/* Logo */}
         <div>
@@ -38,10 +93,15 @@ const Header = () => {
               Home
             </li></Link>
              <Link to="about" smooth={true} duration={500}>
-              <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
-                About
-              </li>
-              </Link>
+                <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+                  About
+                </li>
+                </Link>
+               <Link to="education" smooth={true} duration={500}>
+                <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+                  Education
+                </li>
+               </Link>
              <Link to="experience" smooth={true} duration={500}>
              <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
                 Experience

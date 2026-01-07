@@ -32,7 +32,7 @@ const Experience = () => {
   return (
     <div id="experience" className="bg-gradient-to-b from-[#f8f9fa] to-[#e9ecef] min-h-screen flex items-center">
       <div className="max-w-[90%] md:max-w-[85%] mx-auto font-inter py-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#1a1a2e] mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#fe5617] text-center mb-12">
           Experiences
         </h1>
 

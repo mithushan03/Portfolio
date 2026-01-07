@@ -39,12 +39,9 @@ const Certifications = () => {
       <div className="max-w-[90%] md:max-w-[95%] mx-auto font-inter w-full relative z-10">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1a1a2e] mb-3">
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617] mb-12">
             Certifications <span className="text-3xl">🏆</span>
           </h1>
-          <p className="text-gray-700 text-base md:text-lg uppercase tracking-wider">
-            ACHIEVEMENTS, CERTIFICATIONS, AWARD LETTERS AND SOME COOL STUFF THAT I HAVE DONE!
-          </p>
         </div>
 
         {/* Grid of Certifications */}

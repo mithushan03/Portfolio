@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 import Project from "./components/Project";
@@ -14,6 +15,7 @@ const App = () => {
       <main>
         <Home />
         <About />
+        <Education />
         <Experience />
         <Certifications />
         <Project />

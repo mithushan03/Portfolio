@@ -29,7 +29,7 @@ const Project = () => {
     <div id="project" className="bg-gradient-to-b from-[#f8f9fa] to-[#e9ecef] min-h-screen flex items-center py-16">
       <div className="max-w-[90%] md:max-w-[85%] mx-auto font-inter w-full">
         {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#1a1a2e] mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617] mb-12">
           My Projects
         </h1>
 
