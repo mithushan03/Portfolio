@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#FFFFFF]">
+    <div className="bg-[#FFFFFF] fixed top-0 left-0 w-full z-50 shadow">
       <div className="max-w-[90%] mx-auto py-3 flex items-center justify-between font-inter">
         {/* Logo */}
         <div>
@@ -37,11 +37,21 @@ const Header = () => {
            <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               Home
             </li></Link>
-            <Link to="about" smooth={true} duration={500}>
-            <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
-              About
-            </li>
-            </Link>
+             <Link to="about" smooth={true} duration={500}>
+              <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+                About
+              </li>
+              </Link>
+             <Link to="experience" smooth={true} duration={500}>
+             <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+                Experience
+              </li>
+             </Link>
+               <Link to="certifications" smooth={true} duration={500}>
+               <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+                  Certifications
+                </li>
+               </Link>
            <Link to="project" smooth={true} duration={500}>
            <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               Project
