@@ -16,8 +16,8 @@ const Home = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Electrical Engineering Undergraudate.",
-                  "Electronics Engineering Undergraudate."
+                  "Electrical Engineer.",
+                  "AI/ML-Oriented Engineer."
                 ],
                 autoStart: true,
                 loop: true,
@@ -27,8 +27,8 @@ const Home = () => {
             />
           </h2>
           {/* About Me */}
-          <p className="text-lg md:text-xl text-gray-700 font-medium">
-          A passionate 3rd-year Electrical and Electronics Engineering undergraduate, eager to learn and innovate in areas like circuit design and control systems. I enjoy applying theory to practical solutions and thrive on tackling challenges. As a tutor and content creator, I simplify complex concepts for learners. Committed to growth and meaningful contributions to the engineering field.
+          <p className="text-lg md:text-xl text-gray-700 font-medium text-justify">
+            A final-year Electrical and Electronics Engineering undergraduate with strong interests in Artificial Intelligence, Machine Learning, and software development. Passionate about integrating EEE fundamentals with intelligent systems, I enjoy applying theory to real-world solutions through projects in automation, IoT, and data-driven applications. As a tutor and content creator, I simplify complex technical concepts for effective learning. Highly motivated to grow, innovate, and contribute meaningfully at the intersection of engineering and intelligent technologies.
           </p>
 
           {/* Contact Information */}
