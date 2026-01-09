@@ -10,7 +10,7 @@ const Education = () => {
       ],
     },
     {
-      school: "Secondary Education",
+      school: "Vavuniya Tamil Madya Maha Vidyalayam",
       degree: "Advanced Level (Physical Science)",
       period: "Completed",
       highlights: [

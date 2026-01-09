@@ -18,12 +18,8 @@ const About = () => {
         </h1>
 
         {/* About Me Section */}
-        <p className="text-lg md:text-xl text-gray-700 text-center leading-relaxed">
-          I’m <span className="font-bold text-[#fe5617]">Sachchithananthan Mithushan</span>,
-          a passionate Electrical and Electronics Engineering Undergraudate. As an
-          Undergraudate, I’ve successfully completed My First Internship at 
-          <span className="font-bold text-[#fe5617]"> Sri Lanka Telecom</span>, and Currently, I’m a 3rd year B.Sc(Hons) Electrical and Electronics Engineering student at
-          South Eastern University Of Sri Lanka.
+        <p className="text-lg md:text-xl text-gray-700 text-center text-justify leading-relaxed">
+          I am an Electrical and Electronics Engineering student passionate about electrical systems, electronics, and modern technologies. I enjoy learning, problem-solving, and applying engineering concepts to practical applications while continuously improving my technical and professional skills.
         </p>
 
         {/* Skills Section */}
