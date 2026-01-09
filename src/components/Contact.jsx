@@ -62,24 +62,34 @@ const Contact = () => {
       return;
     }
 
-    // Simulate sending
+    // Send via Web3Forms
     setIsSubmitting(true);
     setStatus({ state: "sending", text: "Sending…" });
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1200));
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3_FORM_API,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
 
-      // TODO: Replace with actual API call:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
+      const data = await response.json();
 
-      setStatus({ state: "ok", text: "Sent! We'll reply soon." });
-      showToast("Message sent — thank you!", true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setCharCount(0);
+      if (data.success) {
+        setStatus({ state: "ok", text: "Sent! We'll reply soon." });
+        showToast("Message sent — thank you!", true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setCharCount(0);
+      } else {
+        setStatus({ state: "err", text: "Failed to send. Please try again." });
+        showToast("Send failed — please try again.", false);
+      }
     } catch (err) {
       setStatus({ state: "err", text: "Something went wrong. Please try again." });
       showToast("Send failed — please try again.", false);
