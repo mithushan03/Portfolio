@@ -2,6 +2,7 @@ import Typewriter from "typewriter-effect";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
+
 const Home = () => {
   return (
     <div id="home" className="bg-[#FFFFFF]">
